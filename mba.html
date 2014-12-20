@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<title>
+BMU
+</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!-- Mobile viewport -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="shortcut icon" href="images/icon.png"  type="image/x-icon" />
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<script language="javascript" src="js/jquery-1.4.2.min.js"></script>
+<script language="javascript" src="js/common.js"></script>
+<script language="javascript" src="js/validate1.js"></script>
+<!-- end JS-->
+
+<!--Source Tracking-->
+<script type="text/javascript">
+var global = "none";
+$(function(){
+        var ldSor = splitUrl('?');
+        $("#stringfield2").val(ldSor);
+        global=ldSor;
+});
+
+function splitUrl(needleOne){
+    var siteUrl = $(location).attr('href');
+    var spLevelOne = siteUrl.split(needleOne);
+	//alert(spLevelOne[1]);
+	return spLevelOne[1];
+}
+
+function Nav(pagename,pageid){    
+
+    if(global == "none"){
+        var str = pagename + ".html";
+    }
+    else{
+        var str = pagename + ".html?" + global;
+    }
+    document.getElementById(pageid).setAttribute("href",str);        
+}
+</script>
+<!--Source Tracking-->
+
+	<link rel="stylesheet" href="css/website.css" type="text/css" media="screen"/>
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#scrollbar1').tinyscrollbar();	
+		});
+	</script>
+    
+ <!--Google Analytics code-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-49654746-1', 'auto');
+ga('require', 'linkid', 'linkid.js');
+  ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+</script>
+<!--Google Analytics code-->   
+    
+</head>
+  
+<body id="home">
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- main content area -->   
+<div id="main" class="wrapper">
+
+<div id="one" style="display:none;">test</div>
+<div id="two"><img src="images/herogroup.png" alt="" width="203" height="38" /></div>
+<div id="three"><img src="images/maintoplogo.png" alt="" /><br />
+
+<div style="clear:both;"></div>
+
+<div id="Admission">
+<img src="images/academiclogo.png" alt=""  />
+<img src="images/admissionopen.png" alt="" width="100%" /></div>
+
+
+<div id="form">
+<form id="tata_aig" action='http://live.xebecemedia.com/campaigns/submit/1418976043255?media=database' method='post' onsubmit ='javascript:return validateWithCourse_01 ();' name="campaigns_01" style="padding:0px 0px; width:100%;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+  <tr>
+    <td>
+    <table width="100%" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+    <td colspan="3" align="center" style="color:#FFFFFF; font-weight:bold; text-transform:uppercase; padding:0 0 10px 0px; font-family:Open Sans, Arial, Helvetica, sans-serif; font-size:24px;">
+    Register here for more details
+    </td>
+    
+  </tr>
+  <tr>
+    <td width="30%">
+      <input type="text" value="Name*" name='leads[name]' id="name_01" class="field" onfocus="if (this.value =='Name*') {this.value = ''}" onblur="if (this.value == '') {this.value='Name*'}" maxlength="100" placeholder="Name*" />
+    </td>
+    <td  width="30%">
+    <input type="text" value="Email*" name='leads[email]' id="email_01" class="field" onfocus="if (this.value =='Email*') {this.value = ''}" onblur="if (this.value == '') {this.value='Email*'}" placeholder="Email*"/>
+    </td>
+    <td  width="30%">
+     <input type="text" value="Mobile*" name='leads[cell_no]' id="cell_no" class="field" onfocus="if (this.value =='Mobile*') {this.value = ''}" onblur="if (this.value == '') {this.value='Mobile*'}" maxlength="10" placeholder="Mobile*" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+     <input type="text" value="City*" name='leads[stringfield1]' id="city" class="field" onfocus="if (this.value =='City*') {this.value = ''}" onblur="if (this.value == '') {this.value='City*'}" maxlength="10" placeholder="City*" />
+    </td>
+    <td>
+<select tabindex="5" id="selectfield1" name="leads[selectfield1]" class="field">
+<option value="-1">Course*</option>
+<option value="MBA">MBA</option>
+<option value="MBA in Accounting and Finance">MBA in Accounting and Finance</option>
+<option value="MBA in Business Analytics (in association with IBM)">MBA in Business Analytics (in association with IBM)</option>
+<option value="BCom Hons (in association with KPMG)">BCom Hons (in association with KPMG)</option>
+<option value="BBA">BBA</option>
+<option value="BBA (in association with KPMG)">BBA (in association with KPMG)</option>
+<option value="BTech">BTech</option>
+</select>  
+    </td>
+    <td align="center">
+    <input type="text" value="source" name='leads[stringfield2]' id="stringfield2" style="display:none;"/>
+<input type="submit" value="" name="submit"  class="login_button" style="background:url(images/submit.jpg) no-repeat center; width:100%; height:30px; border:none;" />
+    </td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+
+</div>
+
+<div id="four">&nbsp;</div>
+
+
+ 
+<div style="clear:both;"></div>
+
+<!--MiddleSection Start here-->
+<div id="MiddleContent">
+<div id="LeftSection">
+<div class="Nav"> 
+<ul>
+<li><a href="" onclick="javascript: Nav('som','som');" id="som">Programmes</a></li>
+<li><a href=""  class="Selected1" onclick="javascript: Nav('mba','mba');" id="mba"> &nbsp;  - MBA</a></li>
+<li><a href="" onclick="javascript: Nav('mba_accounting_finance','mba_accounting_finance');" id="mba_accounting_finance"> &nbsp;  - MBA in Accounting and Finance</a></li>
+<li><a href="" onclick="javascript: Nav('mba_business_analytics','mba_business_analytics');" id="mba_business_analytics"> &nbsp;  - MBA in Business Analytics <br /> &nbsp;&nbsp;&nbsp;  (in association with IBM)</a></li>
+<li><a href="" onclick="javascript: Nav('whymba','whymba');" id="whymba">WHY MBA AT BMU </a></li>
+<li><a href="" onclick="javascript: Nav('eligibility_admission','eligibility_admission');" id="eligibility_admission">Eligibility & Admission</a></li>
+<li><a href="importanrtdates.html" onclick="javascript: Nav('important_dates','important_dates');" id="important_dates">Important Dates</a></li>
+<li><a href="" onclick="javascript: Nav('campus','campus');" id="campus">Campus</a></li>
+<li><a href="" onclick="javascript: Nav('internships_placements','internships_placements');" id="internships_placements">Internships & Placements</a></li>
+</ul>
+</div>
+
+</div>
+<div id="RightSection">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+    <td style="font-size:15px; font-family:Open Sans, Arial, Helvetica, sans-seri; color:#f65151; padding:0 0 5px 0px;">
+  <marquee direction="left" scrollamount="3">Last Date to Apply 31<sup>st</sup> January, 2015</marquee>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+    <table width="150" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" style="background:#f65151; font-size:26px; font-family:Open Sans, Arial, Helvetica, sans-serif; text-transform:uppercase; color:#FFFFFF; padding:10px 10px;">MBA</td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+  <tr>
+    <td class="bodytext">
+    
+    <div id="scrollbar1">
+		<div class="scrollbar">
+        <div class="track">
+        <div class="thumb"><div class="end"></div></div></div></div>
+		<div class="viewport">
+			 <div class="overview"> 
+   
+   The 2 year world-class MBA Programme under the mentorship of Imperial College London has been designed keeping the 'i-value' principle in mind. The entire curriculum has been formulated to ensure multipronged inputs through the iterative process of 'inquire – inspire- impact'. The aim is to transform students into innovative thought leaders and entrepreneurs who create value for their organisations and communities. <br /><br />
+
+The inter-disciplinary, application oriented programme is structured around 21 core, 8 elective, 7 skill and 3 perspective courses.<br /><br />
+
+<strong>Eligibility</strong><br />
+A Bachelor's Degree with a minimum score of 50%, and must have appeared in any one of the entrance exams i.e. CAT, MAT, XAT, GMAT, CMAT or ATMA. While work experience is preferred, it is not compulsory.</div>
+		</div>
+	</div>
+    
+    
+   
+
+    
+    </td>
+  </tr>
+</table>
+</div>
+</div>
+
+<!--MiddleSection End here-->
+
+
+</div>
+
+<a href="#" class="scrollup">Scroll</a> 
+
+
+  <script type="text/javascript">
+   $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+  
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+  
+  
+</script>
+
+<!-- Google Code for Remarketing Tag -->
+
+<!--------------------------------------------------
+
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+
+--------------------------------------------------->
+
+<script type="text/javascript">
+
+/* <![CDATA[ */
+
+var google_conversion_id = 962281875;
+
+var google_custom_params = window.google_tag_params;
+
+var google_remarketing_only = true;
+
+/* ]]> */
+
+</script>
+
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+
+</script>
+
+<noscript>
+
+<div style="display:inline;">
+
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/962281875/?value=0&amp;guid=ON&amp;script=0"/>
+
+</div>
+
+</noscript>
+
+  </body>
+  </html>
